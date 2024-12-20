@@ -2,13 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <tittle>The basic Language of the Web: HMTL</tittle>
+    <tittle></tittle>
   </head>
+
+  <!-- eternal css -->
+  <link href="/style.css" rel="stylesheet" />
+
+  <!-- internal css -->
+  <!-- <style>
+    h1 {
+      color: aqua;
+    }
+  </style>  -->
 
   <body>
     <!-- Semantic HTML are useful for Search engine optimization
       it is important for accessibility for users that use screenreaders such as ARIA-->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -29,7 +39,9 @@
           height="200"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="./img/post-img.jpg"
@@ -61,7 +73,7 @@
       <p>In HTML, each element is made up of 3 parts:</p>
 
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -89,7 +101,9 @@
       </p>
 
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -104,7 +118,7 @@
 
     <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="./img/related-1.jpg"
@@ -113,7 +127,7 @@
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
 
         <li>
@@ -124,7 +138,7 @@
             height="75"
           />
           <a href="#">The Unknow Powers of CSS</a>
-          <p>By John Dillion</p>
+          <p class="related-author">By John Dillion</p>
         </li>
 
         <li>
@@ -135,11 +149,13 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2024 by Broche Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2024 by Broche Magazine</p>
+    </footer>
   </body>
 </html>
